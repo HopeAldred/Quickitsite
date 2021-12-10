@@ -1398,6 +1398,7 @@ footer {
 label, input {
     display: table-cell;
 }
+
 input{
     width: 35vw;
     height: 2em;
@@ -1544,3 +1545,4 @@ input{
     }
 }
 /*------------------------------------------END contact uspage--------------------------------------------------------------*/
+
