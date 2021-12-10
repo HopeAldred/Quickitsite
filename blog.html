@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="navContainer">
+                    <div class="menu" id="navbar">
+                        <img src="assets/hamburger.svg" class="menu" alt="toggle" id="menu">
+                    </div>
+                    <div class="nav" id="slideNav">
+                        <ul class="navButtons show-desktop" id="navigation">
+                            <li><img src="assets/exit-btn.svg" class="exitButton" alt="exit-btn" id="exit"></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="about-us.html">About</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('navigation');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.add('nav-transition');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function (e) {
+            nav.classList.remove('nav-transition');
+            e.preventDefault();
+        });
+
+        nav.addEventListener('click', function (e) {
+            nav.classList.remove('nav-transition');
+        });
+
+        function openNav() {
+            document.getElementById("slideNav").style.width = "1000px";
+        }
+
+        function closeNav() {
+            document.getElementById("slideNav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>

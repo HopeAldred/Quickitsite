@@ -1,0 +1,129 @@
+/*--------------------sliding nav on mobile and desktop ----------------------------*/
+
+.show-desktop {
+    display: block;
+}
+ 
+.nav {
+    padding: 0;
+    margin: 2em 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: bookmania, serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.navContainer {
+    z-index: 7;
+    width: 100%;
+    position: relative;
+    height: 150px;
+}
+ 
+#slideNav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+ 
+nav ul {
+    text-align: right;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+ 
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 15px;
+}
+ 
+nav ul li a {
+    color: black;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: 'Monserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+ 
+nav ul li a:hover {
+    color: black;
+    cursor: pointer;
+}
+ 
+.menu, .exitButton {
+    display: none;
+}
+ 
+.menu {
+    width: 1em;
+    float: right;
+    margin: 1.5em;
+    cursor: pointer;
+}
+ 
+.exitButton {
+    position: absolute;
+    width: 2em;
+    top: 0;
+    right: 3em;
+    padding-top: 3em;
+    cursor: pointer;
+}
+ 
+@media (max-width: 900px){
+    .menu, .exitButton {
+        display: block;
+    }
+ 
+    #slideNav {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+ 
+    #navigation {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0, 0.9);;
+        top: -110vh;
+        overflow-x: hidden;
+        text-align: center;
+        transition: 0.5s ease;
+        margin-block-start: 0;
+        padding-inline-start: 0;
+        padding-bottom: 0;
+    }
+ 
+    .nav-transition {
+        top: 0 !important;
+        transition: 1s !important;
+    }
+ 
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        transition: 0.3s;
+        top: 80px;
+        padding-top: 25px;
+    }
+ 
+    nav ul li a {
+        font-size: 20px;
+        color: #818181;
+    }
+ 
+    nav ul li a:hover {
+        color: white;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
