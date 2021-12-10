@@ -139,3 +139,27 @@ nav ul li a:hover {
 }
 
 /*------------------------------------------homepage--------------------------------------------------------------*/
+
+.home-float {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.homepage-title {
+    margin: 10px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.homepage-hero {
+    width: 150%;
+}
+
+.btn-green {
+    background-color: #006462;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: none;
+}
