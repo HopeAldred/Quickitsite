@@ -173,7 +173,6 @@ footer {
 
 /*------------------------------------------homepage--------------------------------------------------------------*/
 
-
 .home-float {
     display: flex;
     justify-content: space-between;
@@ -399,6 +398,9 @@ footer {
     .home-video, .home-about-grid {
         margin: auto;
     }
+    .home-float {
+        margin: 5em;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -528,13 +530,240 @@ footer {
     .card-title {
         font-size: 22px;
     }
+}
 
-    .card-text {
+/*-----------------------------------------------about us page-----------------------------*/
+
+.about-about-title {
+    font-size: 35px;
+    margin: 0 0 0 1em;
+}
+
+.about-hr-left {
+    margin: 0 0 0 2em;
+    background: #006462;
+    border: 0;
+    width: 60%;
+    height: 5px;
+}
+
+.about-heading-text {
+    margin: 2em;
+}
+
+
+.about-header-img {
+    width: 100%;
+}
+
+.about-sec-grey {
+    background-color: #E3E3E3;
+    padding: 2em;
+}
+
+.about-sec-mission-vision {
+    margin: 0 2em;
+    display: grid;
+    column-gap: 13px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px 280px 1fr;
+    margin-bottom: 3em;
+}
+
+.about-mission-img {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+
+.about-mission-middle {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.about-middle-img {
+    width: 100%;
+    object-fit: cover;
+    height: 280px;
+}
+
+.about-vision {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.about-vision-img {
+    width: 106%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.vision-content {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+.about-hr-vision, .about-hr-mission {
+    background: #006462;
+    border: 0;
+    width: 100%;
+    height: 5px;
+}
+
+.about-banner-img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .about-about-title {
+        margin-left: 2em;
+    }
+
+    .about-hr-left {
+        margin-left: 3em;
+    }
+
+    .about-heading-text {
+        font-size: 20px;
+    }
+
+    .about-sec-grey {
+        padding: 4em;
+    }
+
+    .grey-text {
+        font-size: 20px;
+    }
+
+    .about-mission-title, .about-vision-title {
+        font-size: 30px;
+    }
+
+    .about-mission-text, .about-vision-text {
         font-size: 20px;
     }
 }
 
+@media only screen and (min-width: 900px) {
 
+    .about-head-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 0 2em;
+    }
 
+    .about-head-right {
+        grid-column-start: 2;
+        grid-row-end: 2;
+    }
 
+    .about-header-img {
+        object-fit: cover;
+        width: 100%;
+        height: 600px;
+    }
 
+    .about-heading-text {
+        margin: 2em 4em;
+    }
+
+    .about-about-title {
+        margin-left: 2.5em;
+    }
+
+    .about-hr-left {
+        margin-left: 5em;
+        width: 40%;
+    }
+
+    .about-sec-mission-vision {
+        margin-top: 3em;
+    }
+
+    .about-sec-mission-vision {
+        grid-template-columns: 350px 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 100px 100px 100px 100px 100px 100px;
+    }
+
+    .mission-content {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 3;
+    }
+
+    .about-mission {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .about-mission {
+        width: 100%;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        height: 300px;
+    }
+
+    .about-mission-img {
+        height: 350px;
+    }
+
+    .about-mission-middle {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        z-index: 7;
+    }
+
+    .about-middle-img {
+        height: 200px;
+    }
+
+    .about-vision {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        height: 200px;
+    }
+
+    .about-vision-img {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        height: 300px;
+    }
+
+    .about-vision-content {
+        grid-row-start: 5;
+        grid-column-end: 4;
+    }
+
+    .vision-content {
+        grid-row-start: 5;
+        grid-column-end: 4;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .about-head-content {
+        grid-template-rows: 450px;
+        margin: 4em;
+    }
+
+    .about-header-img {
+        height: 450px;
+    }
+
+    .about-sec-grey {
+        padding: 6em 10em;
+    }
+
+    .about-sec-mission-vision {
+        margin: 5em 10em;
+    }
+}
