@@ -32,38 +32,76 @@
         </header>
     </div>
 
+    <div class="home-float">
+        <div class="home-core-content">
+            <h1 class="homepage-title">Minimise waiting times and increase sales with the Quickit app</h1>
+            <button type="button" class="btn-green">Learn more</button>
+        </div>
+        <img src="/assets/homepage-hero.svg" class="homepage-hero" alt="homepage-hero">
+    </div>
+
+    <main class="home-main">
+        <section class="sec-video">
+            <div class="home-video">
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/m_3v-DGFvxI"
+                    title="YouTube video player" frameborder="0" allow="autoloop mute" allowfullscreen></iframe>
+            </div>
+            <div class="home-about-grid">
+                <h2 class="home-about">Designed to better customer experience
+                    in your restaurant</h2>
+                <button class="btn-green btn-about">About us</button>
+            </div>
+        </section>
+
+        <section class="home-choose">
+            <h2 class="home-why">WHY CHOOSE QUICKIT?</h2>
+            <p class="home-reasons">There are a number of reasons why you should choose Quickit to be your go-to app for
+                personalising your customers experience</p>
+
+            <main id="homepage-cards"></main>
+            <template id="homepage-template">
+                <article class="card-grid">
+                    <div class="cards">
+                        <img src="" class="card-img" alt="img">
+                        <h1 class="card-title"></h1>
+                        <div class="card-text"></div>
+                    </div>
+                </article>
+            </template>
 
 
+        </section>
+
+        <section class="sec-qr-container">
+            <div class="home-banner-container">
+                <div class="home-green-container"></div>
+                <div class="home-banner-img">
+                    <img src="/assets/homepage-banner2.png" class="home-banner-2" alt="home banner image">
+                </div>
+                <div class="home-qr-code"><img src="/assets/home-qr.jpg" class="home-qr-img" alt="home-qr-code">
+                </div>
+            </div>
+            <div class="home-direct-container">
+                <h2 class="home-direct-text">DIRECT QR ORDERING<br>& PAYMENT</h2>
+                <p class="home-ordering-text">Using our integrated tablets with the Quickit app, both servers and the
+                    kitchen can get easy and safe
+                    communication from guests on their meal preferances whilst also offering recommendations and
+                    showcasing
+                    your dishes, so your guests will be tempted to order more.</p>
+                <button type="button" class="btn-green">Learn more</button>
+            </div>
+        </section>
+
+        <section class="sec-hear-more">
+            <h2 class="home-hear-more">Want to hear more?</h2>
+            <button class="btn-white btn-contact">Contact us</button>
+            <button class="btn-green btn-book">Book a meeting</button>
+        </section>
+
+    </main>
 
 
-
-    <script>
-        var menu = document.getElementById('menu');
-        var nav = document.getElementById('navigation');
-        var exit = document.getElementById('exit');
-
-        menu.addEventListener('click', function (e) {
-            nav.classList.add('nav-transition');
-            e.preventDefault();
-        });
-
-        exit.addEventListener('click', function (e) {
-            nav.classList.remove('nav-transition');
-            e.preventDefault();
-        });
-
-        nav.addEventListener('click', function (e) {
-            nav.classList.remove('nav-transition');
-        });
-
-        function openNav() {
-            document.getElementById("slideNav").style.width = "1000px";
-        }
-
-        function closeNav() {
-            document.getElementById("slideNav").style.width = "0";
-        }
-    </script>
+    <script src="/homepage.js"></script>
 
 </body>
 
