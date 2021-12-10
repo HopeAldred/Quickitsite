@@ -1,3 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+}
+
+
 /*--------------------sliding nav on mobile and desktop ----------------------------*/
 
 .show-desktop {
@@ -9,7 +21,7 @@
     margin: 2em 0;
     list-style: none;
     box-sizing: border-box;
-    font-family: bookmania, serif;
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -47,7 +59,7 @@ nav ul li a {
     padding: 7px 13px;
     border-radius: 3px;
     text-decoration: none;
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1em;
 }
@@ -126,4 +138,4 @@ nav ul li a:hover {
     }
 }
 
-/*--------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------homepage--------------------------------------------------------------*/
