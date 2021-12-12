@@ -145,6 +145,10 @@ nav ul li a:hover {
     margin: 2em;
 }
 
+.sec-video {
+    text-align: center;
+}
+
 .homepage-title {
     margin: 10px;
     font-size: 20px;
@@ -164,12 +168,258 @@ nav ul li a:hover {
     border-width: 0;;
 }
 
+.btn-white {
+    background-color: #ffff;
+    border-color: #006462;
+    color: #006462;
+    border-radius: 5px;
+    padding: 10px;
+    border-width: 1px;
+}
+
 .home-about {
-    text-align: center;
     font-size: 20px;
     margin: 0 40px;
 }
 
 .btn-about {
-    align-content: center;
+    margin: 2em 0;
 }
+
+.home-why {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.home-reasons {
+    text-align: center;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 0 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8 {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5%;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+.home-grid-title {
+    font-size: 20px;
+}
+
+.home-icon {
+    width: 100px;
+}
+
+.home-more {
+    line-height: 300px;
+    height: 300px;
+}
+
+.home-green-container {
+    background-color: #006462;
+    height: 100px;
+    margin-top: 3em;
+    position: relative;
+}
+
+.home-banner-img {
+    position: absolute;
+    margin-left: 50px;
+    z-index: 5;
+    padding-top: 80px;
+}
+
+.home-banner-container {
+    display: grid;
+}
+
+.home-qr-code {
+    position: absolute;
+    z-index: 10;
+    right: 5%;
+    padding-top: 140px;
+}
+
+.home-direct-container {
+    position: relative;
+    margin: 5em 3em;
+}
+
+.sec-hear-more {
+    background-color: white;
+    text-align: center;
+    padding: 5em;
+}
+
+@media only screen and (min-width: 650px) {
+    .homepage-hero {
+        width: 70%;
+    }
+
+    .home-core-content {
+        width: 50%;
+    }
+
+    .homepage-title {
+        font-size: 30px;
+    }
+
+    .home-about {
+        font-size: 25px;
+    }
+
+    .btn-green, .btn-white {
+        font-size: 18px;
+    }
+
+    .home-why {
+        font-size: 25px;
+    }
+
+    .home-reasons {
+        font-size: 20px;
+        margin: 0 2em 2em 2em;
+    }
+
+    .grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8 {
+        padding: 0 2em;
+    }
+
+    .home-grid-text {
+        font-size: 18px;
+    }
+
+    .home-direct-text {
+        font-size: 30px;
+    }
+
+    .home-ordering-text {
+        font-size: 20px;
+    }
+
+    .home-hear-more {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .home-float {
+        margin: 5em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .homepage-hero {
+        max-width: 40%;
+    }
+
+    .home-float {
+        justify-content: center;
+    }
+
+    .homepage-title {
+        font-size: 40px;
+    }
+
+    .home-about {
+        font-size: 30px;
+        margin: 0 3em;
+    }
+
+    .home-why {
+        font-size: 30px;
+    }
+
+    .home-reasons {
+        font-size: 25px;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+
+    .home-green-container {
+        height: 200px;
+    }
+
+    .home-direct-text {
+        font-size: 40px;
+    }
+
+    .home-ordering-text {
+        font-size: 25px;
+    }
+
+    .home-direct-container {
+        margin: 8em;
+    }
+
+    .home-hear-more {
+        font-size: 40px;
+    }
+
+    .home-grid {
+        margin: 0 6em;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .home-float {
+        margin: 5em 12em;
+    }
+
+    .home-why {
+        font-size: 35px;
+    }
+
+    .home-reasons {
+        margin: 0 4em 4em 4em;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .home-direct-container {
+        margin: 8em 30em 8em 8em;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .homepage-hero {
+        max-width: 30%;
+    }
+
+    .home-float {
+        margin: 5em 20em;
+    }
+
+    .btn-contact, .btn-book {
+        font-size: 25px;
+    }
+
+    .home-reasons {
+        margin: 0 10em 4em 10em;
+    }
+}
+
+
+
+
+
