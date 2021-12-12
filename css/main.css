@@ -139,3 +139,61 @@ nav ul li a:hover {
 }
 
 /*------------------------------------------homepage--------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------footer------------------------------------------------------------------*/
+
+footer {
+    background-color: #48505F;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30%;
+    width: 90%;
+    text-decoration: none;
+    list-style: none;
+    padding: 1em 1em 0 1em;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-company-policies {
+    text-align: right;
+}
+
+.footer-notes {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.footer-socials {
+    margin-right: 18px;
+}
+
+@media only screen and (min-width: 600px) {
+    .footer-links {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-notes {
+        justify-content: center;
+        gap: 28%;
+        width: 90%;
+        margin-left: 15px;
+    }
+}
