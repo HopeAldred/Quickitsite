@@ -9,7 +9,6 @@ body {
     background-color: #fafafa;
 }
 
-
 /*--------------------sliding nav on mobile and desktop ----------------------------*/
 
 .show-desktop {
@@ -148,7 +147,7 @@ nav ul li a:hover {
 
 .homepage-title {
     margin: 10px;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -158,8 +157,19 @@ nav ul li a:hover {
 
 .btn-green {
     background-color: #006462;
+    border-color: #006462;
+    color: #fff;
+    border-radius: 5px;
     padding: 10px;
-    border-radius: 10px;
-    color: white;
-    box-shadow: none;
+    border-width: 0;;
+}
+
+.home-about {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 40px;
+}
+
+.btn-about {
+    align-content: center;
 }
