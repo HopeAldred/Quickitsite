@@ -419,7 +419,51 @@ nav ul li a:hover {
     }
 }
 /*------------------------------------------featurespage--------------------------------------------------------------*/
+/* first section */
 
+.features-banner{
+    background-color: #fafafa;
+    display: flex;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    
+}
+.features-one-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
 
-
+}
+.features-two-banner{
+    display: flex;
+    flex-direction: column;
+}
+.phone1{
+    background-image: url(../assets/qr_code_phone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 20.5rem; 
+    
+  
+}
+.phone2{
+    background-image: url(../assets/qr_code_phone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 20.5rem; 
+    margin-left: 10.5rem;
+    margin-top: -14rem;
+}
+.phone3{
+    background-image: url(../assets/qr_code_phone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 20.5rem; 
+    margin-left: 21rem;
+    margin-top: -12rem;
+}
 
