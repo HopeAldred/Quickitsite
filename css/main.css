@@ -418,7 +418,6 @@ nav ul li a:hover {
     .btn-contact, .btn-book {
         font-size: 25px;
     }
-
     .home-reasons {
         margin: 0 10em 4em 10em;
     }
@@ -439,6 +438,12 @@ nav ul li a:hover {
     justify-content: center;
     margin: 1rem;
 
+}
+.featuresh1{
+    font-size: 35px;
+}
+.featuresp{
+    font-size: 20px;
 }
 .features-two-banner{
     display: flex;
@@ -476,25 +481,28 @@ nav ul li a:hover {
 .hiw{
     background-color: #006462;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    padding: 2rem;
+    font-size: 35px;
+    padding: 1rem;
     text-align: center;
     color: #fafafa;
 }
 .smallicons{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 18rem);
+    grid-template-columns: repeat(auto-fit, 17rem);
     place-items: center;
     justify-content: center;
     padding: 1rem;
     margin-bottom: 1rem;
-    grid-gap: 10px;
+    grid-gap: 30px;
 }
 .boxicons{
     display: flex;
     flex-direction: column;
     justify-content: center;
     place-items: center;
+}
+.textbox{
+    font-size: 20px;
 }
 .smallimg1{
     background-image: url(../assets/pay.png);
@@ -544,17 +552,62 @@ nav ul li a:hover {
     
 }
 .infobox{
-    padding: 7rem 0rem 0rem 2rem;
+    padding: 8rem 0rem 0rem 2rem;
 }
 
 .righth1{
     text-align: right;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-size: 35px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.infobox-hr{
+    color:#006462;
+    background-color: #006462;
+    height: 5px;
 }
 .rightp{
-    margin-left: 26rem;
+    font-size: 20px;
+    margin-left: 20.5rem;
+}
+
+.imgbox{
+    padding: 2rem;
+}
+.imgright{
+    display: block;
+    width: 700px;
+}
+
+
+.info-template2{
+    display: flex;
+    justify-content: center;
+    
+}
+.infobox2{
+    padding: 8rem 2rem 0rem 0rem;
+}
+
+.righth2{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.infobox-hr{
+    color:#006462;
+    background-color: #006462;
+    height: 5px;
+}
+.rightp2{
+    font-size: 20px;
+    margin-left: 20.5rem;
+    text-align: right;
 }
 
 .imgbox{
