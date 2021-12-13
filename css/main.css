@@ -1,8 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+*{
+    box-sizing: border-box;
 
-
+}
+img{
+    display: block;
+}
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -466,4 +471,98 @@ nav ul li a:hover {
     margin-left: 21rem;
     margin-top: -12rem;
 }
+/* second section */
 
+.hiw{
+    background-color: #006462;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding: 2rem;
+    text-align: center;
+    color: #fafafa;
+}
+.smallicons{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    place-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    grid-gap: 10px;
+}
+.boxicons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+.smallimg1{
+    background-image: url(../assets/pay.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    place-items: center;
+    
+}
+.smallimg2{
+    background-image: url(../assets/pay.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    place-items: center;
+}
+.smallimg3{
+    background-image: url(../assets/pay.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    place-items: center;
+}
+.smallimg4{
+    background-image: url(../assets/pay.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    place-items: center;
+}
+.smallimg5{
+    background-image: url(../assets/pay.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    place-items: center;
+}
+
+.info-template{
+    display: flex;
+    justify-content: center;
+    
+}
+.infobox{
+    padding: 7rem 0rem 0rem 2rem;
+}
+
+.righth1{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+.rightp{
+    margin-left: 26rem;
+}
+
+.imgbox{
+    padding: 2rem;
+}
+.imgright{
+    display: block;
+    width: 700px;
+}
+
+/*------------------------------------------END featurespage--------------------------------------------------------------*/
