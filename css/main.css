@@ -815,6 +815,15 @@ input{
     border-width: 0;
     font-size: 16px;
 }
+.contact-info-icons{
+    margin-left: 10vw;
+}
+.phone-div{
+    display: flex;
+}
+.email-div{
+    display: flex;
+}
 /* second section */
 .img-section{
     flex: 15%;
