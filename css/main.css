@@ -428,15 +428,15 @@ nav ul li a:hover {
 .features-banner{
     background-color: #fafafa;
     display: flex;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    justify-content: space-evenly;
+    margin: 2em;
     
 }
 .features-one-banner{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
+    
 
 }
 .featuresh1{
@@ -448,6 +448,7 @@ nav ul li a:hover {
 .features-two-banner{
     display: flex;
     flex-direction: column;
+    
 }
 .phone1{
     background-image: url(../assets/qr_code_phone.png);
@@ -476,6 +477,81 @@ nav ul li a:hover {
     margin-left: 21rem;
     margin-top: -12rem;
 }
+@media only screen and (max-width: 900px) {
+    .phone1, .phone2, .phone3 {
+       background-size: 80%; 
+    }
+    .phone2{
+        margin-left: 8.5rem;
+        margin-top: -12rem;
+    }
+    .phone3{
+        margin-left: 17rem;
+        margin-top: -10rem;
+    }
+    .features-banner{
+        margin: 0rem 2rem 3rem 2rem;
+    }
+    .featuresh1{
+        font-size: 30px;
+    }
+    .featuresp{
+        font-size: 18px;
+    }
+   
+}
+@media only screen and (max-width: 700px) {
+    
+    .features-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+    }
+    .features-one-banner{
+        padding: 1em;
+    }
+    .features-two-banner{
+        padding: 1em;
+    }
+    .phone1, .phone2, .phone3 {
+        background-size: 70%; 
+       
+    }
+     .phone2{
+        margin-left: 7.5rem;
+        margin-top: -14rem;
+    }
+    .phone3{
+        margin-left: 15rem;
+        margin-top: -16rem;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .features-banner{
+        margin: 0rem 15rem 5rem 15rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .features-banner{
+        margin: 0px 1rem 0px 1rem;
+    }
+    .phone1, .phone2, .phone3 {
+        background-size: 60%; 
+       
+    }
+    .phone1{
+        margin-left: 6rem;
+    }
+    .phone2{
+        margin-left: 12.5rem;
+        margin-top: -14rem;
+    }
+    .phone3{
+        margin-left: 19rem;
+        margin-top: -16rem;
+    }
+}
 /* second section */
 
 .hiw{
@@ -488,11 +564,10 @@ nav ul li a:hover {
 }
 .smallicons{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 17rem);
+    grid-template-columns: repeat(auto-fit, 16rem);
     place-items: center;
     justify-content: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    padding: 2em;
     grid-gap: 30px;
 }
 .boxicons{
@@ -505,7 +580,7 @@ nav ul li a:hover {
     font-size: 20px;
 }
 .smallimg1{
-    background-image: url(../assets/pay.png);
+    background-image: url(../assets/order-table.png);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -514,7 +589,7 @@ nav ul li a:hover {
     
 }
 .smallimg2{
-    background-image: url(../assets/pay.png);
+    background-image: url(../assets/orderfood2.png);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -522,7 +597,7 @@ nav ul li a:hover {
     place-items: center;
 }
 .smallimg3{
-    background-image: url(../assets/pay.png);
+    background-image: url(../assets/soup2.png);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -530,7 +605,7 @@ nav ul li a:hover {
     place-items: center;
 }
 .smallimg4{
-    background-image: url(../assets/pay.png);
+    background-image: url(../assets/tablet2.png);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -538,7 +613,7 @@ nav ul li a:hover {
     place-items: center;
 }
 .smallimg5{
-    background-image: url(../assets/pay.png);
+    background-image: url(../assets/visacard2.png);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -547,12 +622,10 @@ nav ul li a:hover {
 }
 
 .info-template{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
     
-}
-.infobox{
-    padding: 8rem 0rem 0rem 2rem;
 }
 
 .righth1{
@@ -567,30 +640,21 @@ nav ul li a:hover {
     color:#006462;
     background-color: #006462;
     height: 5px;
-}
-.rightp{
-    font-size: 20px;
-    margin-left: 20.5rem;
-}
-
-.imgbox{
-    padding: 2rem;
-}
-.imgright{
-    display: block;
-    width: 700px;
-}
-
-
-.info-template2{
-    display: flex;
-    justify-content: center;
+    border: 0;
+    margin-left: 5em;
     
 }
-.infobox2{
-    padding: 8rem 2rem 0rem 0rem;
+.imgright{
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
 }
 
+.info-template2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em;
+}
 .righth2{
     text-align: right;
     font-family: 'Poppins', sans-serif;
@@ -599,23 +663,89 @@ nav ul li a:hover {
     margin: 0px;
 }
 
-.infobox-hr{
-    color:#006462;
-    background-color: #006462;
-    height: 5px;
-}
-.rightp2{
+.rightp, .rightp2{
     font-size: 20px;
-    margin-left: 20.5rem;
     text-align: right;
 }
 
-.imgbox{
-    padding: 2rem;
+@media only screen and (max-width: 600px) {
+    .infobox{
+        margin: 0em;
+    }
+    .infobox2{
+        margin: 0em;
+    }
+    .info-template{
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+    .info-template2{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .righth1, .righth2{
+        text-align: left;
+        font-size: 30px;
+    }
+    .infobox-hr{
+        margin: 0px;
+    }
+    .rightp, .rightp2{
+        text-align: left;
+        font-size: 18px;
+    }
+    
+    .hiw{
+        font-size: 30px;
+    }
 }
-.imgright{
-    display: block;
-    width: 700px;
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+    .infobox {
+        margin: 8em 1em 0em 0em;
+    }
+    .infobox2{
+            margin: 8em 0em 0em 1em;
+        }
+    .righth1, .righth2{
+        font-size: 30px;
+    }
+    .rightp, .rightp2{
+        font-size: 18px;
+    }
 }
+@media only screen and (min-width: 1101px) {
+    .infobox{
+        margin: 8em 1em 0em 0em; 
+    }
+    .infobox2{
+        margin-top: 8em;
+    }
+    .rightp{
+        margin-left: 8em;
+    }
+    .rightp2{
+        margin-left: 8em;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .infobox{
+        margin: 8em 1em 0em 0em; 
+    }
+    .infobox2{
+        margin-top: 8em;
+    }
+    .rightp{
+        margin-left: 20em;
+    }
+    .rightp2{
+        margin-left: 20em;
+    }
+}
+
+
 
 /*------------------------------------------END featurespage--------------------------------------------------------------*/
