@@ -746,7 +746,84 @@ nav ul li a:hover {
         margin-left: 20em;
     }
 }
-
-
-
 /*------------------------------------------END featurespage--------------------------------------------------------------*/
+
+
+/*------------------------------------------contact uspage--------------------------------------------------------------*/
+.contact-us-main{
+    display: flex;
+}
+.contacth1{
+    font-size: 30px;
+    margin: 0px;
+}
+.contacthr{
+    padding: 0px;
+    margin: 0px 1em 2em 0px;
+    color:#006462;
+    background-color: #006462;
+    height: 5px;
+    border: 0;  
+}
+.contactp{
+    font-size: 18px;
+}
+.form-section{
+    display: flex;
+    flex: 85%;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#fafafa;
+    padding: 2em;
+    margin: 0px 0px 0px 4em; 
+}
+.form-contact{
+    display: flex;
+    font-size: 16px;
+    
+}
+.form-example{
+    display: flex;
+    flex-direction: column;
+}
+label, input {
+    display: table-cell;
+}
+input{
+    width: 35vw;
+    height: 2em;
+    margin-bottom: 1em;
+}
+	
+   
+  input:valid {
+    border: 1px solid #006462;
+  }
+   
+  input:placeholder-shown {
+    border: 1px solid black;
+  }
+
+.submit-btn{
+    background-color: #006462;
+    border-color: #006462;
+    color: #fff;
+    width: 7em;
+    margin-top: 1em;
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 0;
+    font-size: 16px;
+}
+/* second section */
+.img-section{
+    flex: 15%;
+}
+.crop-img{
+    width: 100%;
+    object-fit: cover;
+    height: 900px;
+}
+
+
+/*------------------------------------------END contact uspage--------------------------------------------------------------*/
