@@ -569,6 +569,7 @@ nav ul li a:hover {
     justify-content: center;
     padding: 2em;
     grid-gap: 30px;
+    text-align: center;
 }
 .boxicons{
     display: flex;
