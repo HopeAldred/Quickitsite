@@ -580,7 +580,7 @@ nav ul li a:hover {
     font-size: 20px;
 }
 .smallimg1{
-    background-image: url(../assets/order-table.png);
+    background-image: url(../assets/table.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -589,7 +589,7 @@ nav ul li a:hover {
     
 }
 .smallimg2{
-    background-image: url(../assets/orderfood2.png);
+    background-image: url(../assets/order_1.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -597,7 +597,7 @@ nav ul li a:hover {
     place-items: center;
 }
 .smallimg3{
-    background-image: url(../assets/soup2.png);
+    background-image: url(../assets/meal_1.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -605,7 +605,7 @@ nav ul li a:hover {
     place-items: center;
 }
 .smallimg4{
-    background-image: url(../assets/tablet2.png);
+    background-image: url(../assets/tablet_2.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -613,7 +613,7 @@ nav ul li a:hover {
     place-items: center;
 }
 .smallimg5{
-    background-image: url(../assets/visacard2.png);
+    background-image: url(../assets/card.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
