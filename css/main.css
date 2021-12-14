@@ -767,3 +767,253 @@ footer {
         margin: 5em 10em;
     }
 }
+
+/*-------------------------------------------------------blogpage------------------------------------------------------*/
+
+.blog-heading {
+    margin-left: 1em;
+    margin-bottom: 0;
+}
+
+.blog-hr-tag {
+    margin: 0 0 5em 2em;
+    background: #006462;
+    border: 0;
+    width: 60%;
+    height: 5px;
+} 
+
+
+.blog-img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 80px 50px 250px;
+    margin: 0 2em 8em 1em;
+}
+
+.blog-header {
+    font-size: 30px;
+}
+
+.blog-short-text {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 900px) {
+    #latest-blog .blog-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 130px 40px 300px;
+        column-gap: 30px;
+    }
+
+    .blog-heading {
+        margin: 0 3em;
+    }
+
+    .blog-hr-tag {
+        margin: 0 0 5em 5em;
+    }
+
+    .blog-img {
+        height: 420px;
+    }
+
+    .blog-date {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .blog-short-text {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+
+    #main-blog .blog-grid {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 50px 300px;
+        margin: 0 5em;
+    }
+
+    #main-blog .blog-link {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #main-blog .blog-img {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    #main-blog .blog-header {
+        margin: 0;
+        font-size: 40px;
+        grid-column-start: 1;
+    }
+
+    #main-blog .blog-date {
+        margin-top: auto;
+    }
+
+    #main-blog .blog-short-text {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: 20px;
+    }
+
+    #latest-blog {
+        margin: 0 5em;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #main-blog .blog-grid {
+        margin: 0 20em;
+    }
+
+    #latest-blog {
+        margin: 0 20em;
+    }
+
+    .blog-heading {
+        margin: 0 15em;
+    }
+
+    .blog-hr-tag {
+        margin: 0 0 5em 30em;
+        width: 20%;
+    }
+
+    .blog-heading {
+        margin-left: 10em;
+        margin-bottom: 0;
+    }
+    
+    .blog-hr-tag {
+        margin: 0 0 5em 20em;
+        background: #006462;
+        border: 0;
+        width: 20%;
+        height: 5px;
+    } 
+
+}
+
+/*----------------------------------single blog page------------------------------*/
+
+@media only screen and (min-width: 900px) {
+    .single-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 80px 250px;
+        margin: 0 5em;
+    }
+
+    .single-img {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .single-date {
+        grid-column-start: 2;
+        margin-top: auto;
+    }
+
+    .single-text {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .single-grid {
+        margin: 0 15em;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .single-grid {
+        margin: 0 25em;
+    }
+}
+
+/*------------------------------------thanks page------------------------------------*/
+
+.thanks-card {
+    background-color: #006462;
+    padding: 2em;
+    text-align: center;
+    color: white;
+    margin: 1em;
+    border: solid black 5px;
+}
+
+.thanks-title {
+    text-decoration: underline;
+}
+
+.thanks-icons {
+    margin-right: 5px;
+    width: 10%;
+}
+
+.thanks-text {
+    font-size: 18px;
+}
+
+.thanks-connect {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 900px) {
+    .thanks-card {
+        margin: 0 10em;
+    }
+
+    .thanks-icons {
+        width: 7%;
+    }
+
+    .thanks-tick {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .thanks-card {
+        margin: 0 20em;
+    }
+
+    .thanks-icons {
+        width: 7%;
+    }
+
+    .thanks-tick {
+        width: 15%;
+    }
+
+    .thanks-title {
+        font-size: 35px;
+    }
+
+    .thanks-text {
+        font-size: 22px;
+    }
+
+    .thanks-connect {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .thanks-icons {
+        width: 4%;
+    }
+}
