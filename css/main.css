@@ -643,7 +643,6 @@ nav ul li a:hover {
     height: 5px;
     border: 0;
     margin-left: 5em;
-    
 }
 .imgright{
     width: 100%;
@@ -754,7 +753,7 @@ nav ul li a:hover {
     display: flex;
 }
 .contacth1{
-    font-size: 30px;
+    font-size: 35px;
     margin: 0px;
 }
 .contacthr{
@@ -766,23 +765,22 @@ nav ul li a:hover {
     border: 0;  
 }
 .contactp{
-    font-size: 18px;
+    font-size: 20px;
 }
 .form-section{
     display: flex;
     flex: 85%;
-    justify-content: center;
     flex-direction: column;
     background-color:#fafafa;
     padding: 2em;
     margin: 0px 0px 0px 4em; 
 }
+
 .form-contact{
     display: flex;
     font-size: 16px;
-    
 }
-.form-example{
+.form-cu{
     display: flex;
     flex-direction: column;
 }
@@ -795,11 +793,12 @@ input{
     margin-bottom: 1em;
 }
 	
-   
   input:valid {
     border: 1px solid #006462;
   }
-   
+  input:invalid {
+    border: 1px solid red;
+  }
   input:placeholder-shown {
     border: 1px solid black;
   }
@@ -816,7 +815,9 @@ input{
     font-size: 16px;
 }
 .contact-info-icons{
-    margin-left: 10vw;
+    margin-left: 12vw;
+    display: flex;
+    flex-direction: column;
 }
 .phone-div{
     display: flex;
@@ -833,6 +834,102 @@ input{
     object-fit: cover;
     height: 900px;
 }
+.underline{
+    border-bottom: 1px solid black;
+}
+.small-icon-contact{
+    display: inline-block;
+    width: 2.5em;
+    margin-left: 1.7em;
+    
+}
+.info-contact-us{
+    margin-bottom: 2em;
+}
+@media only screen and (max-width: 600px) {
+  .img-section{
+      visibility: hidden;
+  }
+    .form-contact{
+    justify-content: center;
+    flex-direction: column;
+}
+    .contact-info-icons{
+    margin: 3em 0px 0px 0.5em;
+}
 
+    .small-icon-contact{
+    margin-left: 0px;
+}
+    .form-section{
+    padding: 0px;
+    margin: 0px;
+}
+    .contacth1{
+    font-size: 30px;
+    margin: 0px;
+}
+    .contactp{
+    font-size: 18px;
+}
+    .contact-us-main{
+    margin: 2em;
+}
+    .underline{
+    text-align: center;
+}
+    .icons-text-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .small-icon-contact{
+    display: inline-block;
+    width: 2.5em;
+    margin-left: 1em;
+}
+.contacthr{
+    margin-right: 5em;
+    height: 5px;
+    border: 0;  
+}
+}
+@media only screen and (min-width: 601px) and (max-width: 899px) {
+    .img-section{
+        visibility: hidden;
+    }
+    .contacthr{
+        margin-right: 10em;
+        height: 5px;
+        border: 0;  
+    }
+}
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .contacthr{
+        margin-right: 30rem;
+    }
+    
+    .contactp{
+        margin-right: 15em;
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1399px) {
+    .contacthr{
+        margin-right: 27rem;
+    }
+    
+    .contactp{
+        margin-right: 12em;
+    }
+}
 
+@media only screen and (min-width: 1400px) {
+    .contacthr{
+        margin-right: 50rem;
+    }
+    
+    .contactp{
+        margin-right: 35em;
+    }
+}
 /*------------------------------------------END contact uspage--------------------------------------------------------------*/
