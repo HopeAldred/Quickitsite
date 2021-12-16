@@ -742,7 +742,7 @@ nav ul li a:hover {
         margin-left: 20em;
     }
     .rightp2{
-        margin-left: 20em;
+        margin-left: 17em;
     }
 }
 /*------------------------------------------END featurespage--------------------------------------------------------------*/
@@ -787,6 +787,7 @@ nav ul li a:hover {
 label, input {
     display: table-cell;
 }
+
 input{
     width: 35vw;
     height: 2em;
