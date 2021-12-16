@@ -48,7 +48,7 @@
         
     </div>
     </section>
-    <section class="howitworks"> 
+    <section class="howitworks">
         <div class="hiw">
             <h1>HOW IT WORKS</h1>
         </div>
@@ -93,20 +93,22 @@
                
             </div>
         </article>
+<template> 
     <article class="info-template">
     
-        <div class="infobox"> 
-            <h1 class="righth1">SHOWCASE YOUR MENU</h1>
+        <div class="infobox infobox2"> 
+            <h1 class="righth1 righth2"></h1>
             <hr class="infobox-hr">
-        <p class="rightp"> Highlight your menu on a digital platform in a new and easy to access way. Offer recommendations and show your guests the most popular dishes from previous visits.</p>
+        <p class="rightp rightp2"> </p>
     </div>
 
-    <div class="imgbox"> 
-        <img class="imgright" src="assets/waiters.png" alt="waiters offering the orders">
+    <div> 
+        <img src="" class="imgbox" alt="waiters">
     </div>
     </article>
-    
-    <article class="info-template2">
+</template>
+    <article class="info-template2"> </article>
+    <!-- <article class="info-template2">
         <div class="imgbox"> 
             <img class="imgright" src="assets/cheers.png" alt="waiters offering the orders">
         </div>
@@ -116,17 +118,7 @@
         <p class="rightp2"> Through Quickit you can get customer data to personalise the guest experience for when they return. Use the data to save their previous meals and recommend dishes based on what they ordered. For guests with specific dietry requirements, the app saves the data for a more tailored and safe experience within the restaurant.</p>
     </div>
     </article>
-    <article class="info-template">
-        <div class="infobox"> 
-            <h1 class="righth1">UPSALE YOUR MENU</h1>
-            <hr class="infobox-hr">
-        <p class="rightp"> Offer your guests upgrades on their orders through the Quickit app. Show your guests that a larger drink or an extra dip is available with their dish.</p>
-    </div>
-
-    <div class="imgbox"> 
-        <img class="imgright" src="assets/food_plates2.png" alt="waiters offering the orders">
-    </div>
-    </article>
+  -->
 
     </section>
     <section class="sec-hear-more">
@@ -137,33 +129,8 @@
 </main>
 
 
-    <script>
-        var menu = document.getElementById('menu');
-        var nav = document.getElementById('navigation');
-        var exit = document.getElementById('exit');
-
-        menu.addEventListener('click', function (e) {
-            nav.classList.add('nav-transition');
-            e.preventDefault();
-        });
-
-        exit.addEventListener('click', function (e) {
-            nav.classList.remove('nav-transition');
-            e.preventDefault();
-        });
-
-        nav.addEventListener('click', function (e) {
-            nav.classList.remove('nav-transition');
-        });
-
-        function openNav() {
-            document.getElementById("slideNav").style.width = "1000px";
-        }
-
-        function closeNav() {
-            document.getElementById("slideNav").style.width = "0";
-        }
-    </script>
+    <script src="features.js"></script>
+   
 
 </body>
 
