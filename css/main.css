@@ -14,7 +14,13 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fafafa;
 }
-
+:root{
+    --primaryFont: 'Poppins', sans-serif;
+    --green: #006462;
+    --grey: #48505F;
+    --lightgrey: #fafafa;
+    --middlegrey: #E3E3E3;
+}
 /*--------------------sliding nav on mobile and desktop ----------------------------*/
 
 .show-desktop {
@@ -104,7 +110,7 @@ nav ul li a {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #006462;
+        background-color: var(--green);
         top: -110vh;
         overflow-x: hidden;
         text-align: center;
@@ -137,7 +143,7 @@ nav ul li a {
 /*-----------------------------------------footer------------------------------------------------------------------*/
 
 footer {
-    background-color: #48505F;
+    background-color: var(--grey);
     color: white;
 }
 
@@ -167,6 +173,8 @@ footer {
 }
 
 .footer-socials {
+    display: flex;
+    gap: 0.5em;
     margin-right: 18px;
 }
 
@@ -200,8 +208,8 @@ footer {
 }
 
 .btn-green {
-    background-color: #006462;
-    border-color: #006462;
+    background-color: var(--green);
+    border-color: var(--green);
     color: #fff;
     border-radius: 5px;
     padding: 10px;
@@ -210,8 +218,8 @@ footer {
 
 .btn-white {
     background-color: #ffff;
-    border-color: #006462;
-    color: #006462;
+    border-color: var(--green);
+    color: var(--green);
     border-radius: 5px;
     padding: 10px;
     border-width: 1px;
@@ -265,7 +273,7 @@ footer {
 }
 
 .home-green-container {
-    background-color: #006462;
+    background-color: var(--green);
     height: 100px;
     margin-top: 3em;
     position: relative;
@@ -570,7 +578,7 @@ footer {
 }
 
 .about-sec-grey {
-    background-color: #E3E3E3;
+    background-color: var(--middlegrey);
     padding: 2em;
 }
 
@@ -959,7 +967,7 @@ footer {
 /*------------------------------------thanks page------------------------------------*/
 
 .thanks-card {
-    background-color: #006462;
+    background-color: var(--green);
     padding: 2em;
     text-align: center;
     color: white;
@@ -1038,7 +1046,7 @@ footer {
 /* first section */
 
 .features-banner{
-    background-color: #fafafa;
+    background-color: var(--lightgrey);
     display: flex;
     justify-content: space-evenly;
     margin: 2em;
@@ -1167,12 +1175,12 @@ footer {
 /* second section */
 
 .hiw{
-    background-color: #006462;
+    background-color: var(--green);
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
     padding: 1rem;
     text-align: center;
-    color: #fafafa;
+    color: var(--lightgrey);
 }
 .smallicons{
     display: grid;
@@ -1210,14 +1218,6 @@ footer {
     place-items: center;
 }
 .smallimg3{
-    background-image: url(../assets/meal_1.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
-    place-items: center;
-}
-.smallimg4{
     background-image: url(../assets/tablet_2.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -1225,7 +1225,7 @@ footer {
     height: 200px;
     place-items: center;
 }
-.smallimg5{
+.smallimg4{
     background-image: url(../assets/card.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -1233,130 +1233,15 @@ footer {
     height: 200px;
     place-items: center;
 }
-
-.info-template{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em;
-    
-}
-
-.righth1{
-    text-align: right;
-    font-family: 'Poppins', sans-serif;
-    font-size: 35px;
-    padding: 0px;
-    margin: 0px;
-}
-
-.infobox-hr{
-    color:#006462;
-    background-color: #006462;
-    height: 5px;
-    border: 0;
-    margin-left: 5em;
-}
-.imgright{
+.smallimg5{
+    background-image: url(../assets/meal_1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 100%;
-    object-fit: cover;
-    height: 500px;
+    height: 200px;
+    place-items: center;
 }
 
-.info-template2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em;
-}
-.righth2{
-    text-align: right;
-    font-family: 'Poppins', sans-serif;
-    font-size: 35px;
-    padding: 0px;
-    margin: 0px;
-}
-
-.rightp, .rightp2{
-    font-size: 20px;
-    text-align: right;
-}
-
-@media only screen and (max-width: 600px) {
-    .infobox{
-        margin: 0em;
-    }
-    .infobox2{
-        margin: 0em;
-    }
-    .info-template{
-        display: flex;
-        flex-direction: column;
-        
-       
-    }
-    .info-template2{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .righth1, .righth2{
-        text-align: left;
-        font-size: 30px;
-    }
-    .infobox-hr{
-        margin: 0px;
-    }
-    .rightp, .rightp2{
-        text-align: left;
-        font-size: 18px;
-    }
-    
-    .hiw{
-        font-size: 30px;
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1100px) {
-    .infobox {
-        margin: 8em 1em 0em 0em;
-    }
-    .infobox2{
-            margin: 8em 0em 0em 1em;
-        }
-    .righth1, .righth2{
-        font-size: 30px;
-    }
-    .rightp, .rightp2{
-        font-size: 18px;
-    }
-}
-@media only screen and (min-width: 1101px) {
-    .infobox{
-        margin: 8em 1em 0em 0em; 
-    }
-    .infobox2{
-        margin-top: 8em;
-    }
-    .rightp{
-        margin-left: 8em;
-    }
-    .rightp2{
-        margin-left: 8em;
-    }
-}
-@media only screen and (min-width: 1500px) {
-    .infobox{
-        margin: 8em 1em 0em 0em; 
-    }
-    .infobox2{
-        margin-top: 8em;
-    }
-    .rightp{
-        margin-left: 20em;
-    }
-    .rightp2{
-        margin-left: 20em;
-    }
-}
 /* second-part of the second section */
 
 .info-template-left article{
@@ -1373,7 +1258,7 @@ article:nth-child(odd) .righth1-left{
     font-size: 35px;
     text-align: right;
     margin: 4em 0em 0em 3em;
-    border-bottom: 5px solid #006462;
+    border-bottom: 5px solid var(--grey);
 }
 article:nth-child(odd) .rightp-left{
     font-size: 20px;
@@ -1386,7 +1271,7 @@ article:nth-child(even) .righth1-left{
     font-size: 35px;
     text-align: right;
     margin: 4.5em 0em 0em 3em;
-    border-bottom: 5px solid #006462;
+    border-bottom: 5px solid var(--green);
 }
 article:nth-child(even) .rightp-left{
     font-size: 20px;
@@ -1405,7 +1290,7 @@ article:nth-child(even) .rightp-left{
     article:nth-child(odd) .righth1-left{
         font-size: 30px;
         text-align: left;
-        border-bottom: 5px solid #006462;
+        border-bottom: 5px solid var(--green);
         margin: 1.5em 0.5em 0em 0em;
     }
     article:nth-child(odd) .rightp-left{
@@ -1420,7 +1305,7 @@ article:nth-child(even) .rightp-left{
     article:nth-child(even) .righth1-left{
         font-size: 30px;
         text-align: left;
-        border-bottom: 5px solid #006462;
+        border-bottom: 5px solid var(--green);
         margin: 1.5em 0.5em 0em 0em;
     }
     article:nth-child(even) .rightp-left{
@@ -1438,7 +1323,7 @@ article:nth-child(even) .rightp-left{
     article:nth-child(odd) .righth1-left{
         font-size: 35px;
         text-align: right;
-        border-bottom: 5px solid #006462;
+        border-bottom: 5px solid var(--green);
         margin: 0px
     }
     article:nth-child(odd) .rightp-left{
@@ -1450,7 +1335,7 @@ article:nth-child(even) .rightp-left{
     article:nth-child(even) .righth1-left{
         font-size: 30px;
         text-align: right;
-        border-bottom: 5px solid #006462;
+        border-bottom: 5px solid var(--green);
         margin: 0em 0em 0em 1em;
     }
     article:nth-child(even) .rightp-left{
@@ -1461,8 +1346,9 @@ article:nth-child(even) .rightp-left{
     }
     article:nth-child(even){
         margin: 0px;
-        padding: 0px;
+        /* padding: 0px; */
     }
+    
     
 }
 @media only screen and (min-width: 950px) and (max-width:1499px) {
@@ -1470,7 +1356,7 @@ article:nth-child(even) .rightp-left{
     article:nth-child(odd) .righth1-left{
         font-size: 35px;
         text-align: right;
-        border-bottom: 5px solid #006462;
+        border-bottom: 5px solid var(--green);
         margin: 2em 0em 0em 3em;
     }
     article:nth-child(odd) .rightp-left{
@@ -1482,13 +1368,13 @@ article:nth-child(even) .rightp-left{
     article:nth-child(even) .righth1-left{
         font-size: 30px;
         text-align: right;
-        border-bottom: 5px solid #006462;
-        margin: 2em 1em 0em 1em;
+        border-bottom: 5px solid var(--green);
+        margin: 2em 0em 0em 1em;
     }
     article:nth-child(even) .rightp-left{
         font-size: 18px;
         text-align: right;
-        margin: 1em 1.5em 0em 1.5em;
+        margin: 1em 0em 0em 1.5em;
         
     }
     article:nth-child(even){
@@ -1496,7 +1382,21 @@ article:nth-child(even) .rightp-left{
     }
     
 }
-
+.scrollbutton{
+    position: fixed;
+    background-image: url(../assets/backtotop.svg);
+    background-size: 100%;
+    color: white;
+    bottom: 10px;
+    right: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+}
+button{
+    cursor: pointer;
+}
 /*------------------------------------------END featurespage--------------------------------------------------------------*/
 
 
@@ -1511,8 +1411,8 @@ article:nth-child(even) .rightp-left{
 .contacthr{
     padding: 0px;
     margin: 0px 1em 2em 0px;
-    color:#006462;
-    background-color: #006462;
+    color:var(--green);
+    background-color: var(--green);
     height: 5px;
     border: 0;  
 }
@@ -1523,7 +1423,7 @@ article:nth-child(even) .rightp-left{
     display: flex;
     flex: 85%;
     flex-direction: column;
-    background-color:#fafafa;
+    background-color: var(--lightgrey);
     padding: 2em;
     margin: 0px 0px 0px 4em; 
 }
@@ -1547,7 +1447,9 @@ input{
 }
 	
   input:valid {
-    border: 1px solid #006462;
+    border: 1px solid var(--green);
+    font-size: 16px;
+   
   }
   input:invalid {
     border: 1px solid red;
@@ -1557,8 +1459,8 @@ input{
   }
 
 .submit-btn{
-    background-color: #006462;
-    border-color: #006462;
+    background-color: var(--green);
+    border-color: var(--green);
     color: #fff;
     width: 7em;
     margin-top: 1em;
