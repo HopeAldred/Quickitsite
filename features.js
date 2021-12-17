@@ -1,4 +1,4 @@
-const url = "https://quickit-ba88.restdb.io/rest/smallarticles?max=3";
+const url = "https://quickit-ba88.restdb.io/rest/smallarticles";
 
 const options = {
   headers: {
@@ -16,9 +16,6 @@ fetch(url, options)
   .then((data) => {
     // console.log(data)
     handleData(data);
-  })
-  .catch((e) => {
-    console.error("An error occured:", e.message);
   });
 
 function handleData(smallarticles) {
@@ -26,26 +23,38 @@ function handleData(smallarticles) {
     // console.log(smallarticle);//
     // 1. make a template
     // 2. grab it
-    const template = document.querySelector("template").content;
 
-    // 3. clone it
-    const clone = template.cloneNode(true);
-    // 4. populate with data
-    clone.querySelector(".righth1").textContent = smallarticle.header;
-    clone.querySelector(".rightp").textContent = smallarticle.description;
-    clone.querySelector(".imgbox").src = smallarticle.img_url;
-    // 5. appent to something in the DOM
-    if (index === 0) {
-      const mainEl = document.querySelector(".howitworks");
-
+    // if odd get right template
+    if (index / 2 === 0) {
+      const template = document.querySelector(".template-right").content;
+      const clone = template.cloneNode(true);
+      clone.querySelector(".righth1-right").textContent = smallarticle.header;
+      clone.querySelector(".rightp-right").textContent =
+        smallarticle.description;
+      clone.querySelector(".custom-img").src = smallarticle.img_url;
+      const mainEl = document.querySelector(".info-template-right");
       mainEl.appendChild(clone);
     } else {
-      const mainEl = document.querySelector(".info-template2");
-
+      const template = document.querySelector(".template-left").content;
+      const clone = template.cloneNode(true);
+      clone.querySelector(".righth1-left").textContent = smallarticle.header;
+      clone.querySelector(".rightp-left").textContent =
+        smallarticle.description;
+      clone.querySelector(".custom-img").src = smallarticle.img_url;
+      const mainEl = document.querySelector(".info-template-left");
       mainEl.appendChild(clone);
     }
   });
 }
+// if even get left template
+// fill correct data in template
+// 4. populate with data
+// append template to Selection
+// REMEMBER Style correctly using parent class
+
+// 3. clone it
+
+// 5. appent to something in the DOM
 
 var menu = document.getElementById("menu");
 var nav = document.getElementById("navigation");
