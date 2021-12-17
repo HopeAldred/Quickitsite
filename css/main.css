@@ -9,7 +9,6 @@ body {
     background-color: #fafafa;
 }
 
-
 /*--------------------sliding nav on mobile and desktop ----------------------------*/
 
 .show-desktop {
@@ -129,11 +128,6 @@ nav ul li a {
     }
 }
 
-/*------------------------------------------homepage--------------------------------------------------------------*/
-
-
-
-
 /*-----------------------------------------footer------------------------------------------------------------------*/
 
 footer {
@@ -176,6 +170,197 @@ footer {
     }
 }
 
+
+/*------------------------------------------homepage--------------------------------------------------------------*/
+
+
+.home-float {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.sec-video {
+    text-align: center;
+}
+
+.homepage-title {
+    margin: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.homepage-hero {
+    width: 150%;
+}
+
+.btn-green {
+    background-color: #006462;
+    border-color: #006462;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    border-width: 0;;
+}
+
+.btn-white {
+    background-color: #ffff;
+    border-color: #006462;
+    color: #006462;
+    border-radius: 5px;
+    padding: 10px;
+    border-width: 1px;
+}
+
+.home-video {
+    margin-top: 8em;
+}
+
+.home-about {
+    font-size: 20px;
+    margin: 0 40px;
+}
+
+.btn-about {
+    margin: 2em 0;
+}
+
+.home-why {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.home-reasons {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: 100px 100px 150px;
+    margin: 5em;
+    background: white;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5%;
+}
+
+.home-grid-title {
+    font-size: 20px;
+}
+
+.card-img {
+    width: 100px;
+    margin: auto;
+}
+
+.home-more {
+    line-height: 300px;
+    height: 300px;
+}
+
+.home-green-container {
+    background-color: #006462;
+    height: 100px;
+    margin-top: 3em;
+    position: relative;
+}
+
+.home-banner-2 {
+   width: 80%;
+   margin-left: 3em;
+   object-fit: cover;
+   height: 100px;
+}
+
+.home-banner-img {
+    z-index: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.home-banner-container {
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 1fr;
+}
+
+.home-qr-code {
+    z-index: 10;
+    right: 0px;
+    grid-row-start: 4;
+    position: absolute;
+    padding-top: 10em;
+}
+
+.home-qr-img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.home-direct-container {
+    position: relative;
+    margin: 2em 3em;
+}
+
+.sec-hear-more {
+    background-color: white;
+    text-align: center;
+    padding: 5em;
+}
+
+@media only screen and (min-width: 650px) {
+    .homepage-hero {
+        width: 70%;
+    }
+
+    .home-core-content {
+        width: 50%;
+    }
+
+    .homepage-title {
+        font-size: 30px;
+    }
+
+    .home-about {
+        font-size: 25px;
+    }
+
+    .btn-green, .btn-white {
+        font-size: 18px;
+    }
+
+    .home-why {
+        font-size: 25px;
+    }
+
+    .home-reasons {
+        font-size: 20px;
+        margin: 0 2em 2em 2em;
+    }
+
+    #homepage-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards {
+        margin: 20px;
+    }
+
+    .home-direct-text {
+        font-size: 30px;
+    }
+
+    .home-ordering-text {
+        font-size: 20px;
+    }
+
+    .home-hear-more {
+        font-size: 35px;
+    }
+}
+
 @media only screen and (min-width: 800px) {
     .footer-links {
         justify-content: center;
@@ -187,4 +372,169 @@ footer {
         width: 90%;
         margin-left: 15px;
     }
+    
+    .home-float {
+        margin: 5em;
+    }
+
+    .home-banner-2 {
+        height: 150px;
+        width: 90%;
+    }
+
+    .home-direct-container {
+        margin-top: 4em;
+    }
+
+    #homepage-cards {
+        margin: 3em;
+    }
+
+    .sec-video {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 8em 10em;
+    }
+
+    .home-video, .home-about-grid {
+        margin: auto;
+    }
 }
+
+@media only screen and (min-width: 1000px) {
+    .homepage-hero {
+        max-width: 40%;
+    }
+
+    .home-float {
+        justify-content: center;
+    }
+
+    .homepage-title {
+        font-size: 40px;
+    }
+
+    .home-about {
+        font-size: 30px;
+        margin: 0 3em;
+    }
+
+    .home-why {
+        font-size: 30px;
+    }
+
+    .home-reasons {
+        font-size: 25px;
+    }
+
+    #homepage-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home-green-container {
+        height: 200px;
+    }
+
+    .home-direct-text {
+        font-size: 40px;
+    }
+
+    .home-ordering-text {
+        font-size: 25px;
+    }
+
+    .home-direct-container {
+        margin: 8em;
+    }
+
+    .home-hear-more {
+        font-size: 40px;
+    }
+
+    .home-banner-2 {
+        height: 200px;
+    }
+
+    .home-qr-code {
+        width: 20%;
+        right: 2%;
+        padding-top: 13em;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .home-float {
+        margin: 5em 12em;
+    }
+
+    .home-why {
+        font-size: 35px;
+    }
+
+    .home-reasons {
+        margin: 0 4em 4em 4em;
+    }
+
+    #homepage-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .home-direct-container {
+        margin: 8em 30em 8em 8em;
+    }
+
+    .home-banner-2 {
+        height: 300px;
+        width: 95%;
+    }
+
+    .home-direct-container {
+        margin: 15em;
+    }
+
+    .home-qr-code {
+        right: 15%;
+        padding-top: 20em;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .homepage-hero {
+        max-width: 30%;
+    }
+
+    .home-float {
+        margin: 5em 20em;
+    }
+
+    .btn-contact, .btn-book {
+        font-size: 25px;
+    }
+
+    .home-reasons {
+        margin: 0 10em 4em 10em;
+    }
+
+    .home-qr-code {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    #homepage-cards {
+        margin: 5em 10em;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-text {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
