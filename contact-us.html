@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/main.js">
 </head>
 
 <body>
@@ -34,38 +35,31 @@
 
 
 
-
-
-
-
-
-    <script>
-        var menu = document.getElementById('menu');
-        var nav = document.getElementById('navigation');
-        var exit = document.getElementById('exit');
-
-        menu.addEventListener('click', function (e) {
-            nav.classList.add('nav-transition');
-            e.preventDefault();
-        });
-
-        exit.addEventListener('click', function (e) {
-            nav.classList.remove('nav-transition');
-            e.preventDefault();
-        });
-
-        nav.addEventListener('click', function (e) {
-            nav.classList.remove('nav-transition');
-        });
-
-        function openNav() {
-            document.getElementById("slideNav").style.width = "1000px";
-        }
-
-        function closeNav() {
-            document.getElementById("slideNav").style.width = "0";
-        }
-    </script>
+    <footer>
+        <div class="footer">
+            <div class="footer-links">
+                <div class="footer-company-info">
+                    <li>Quickit ApS</li>
+                    <li>tlf: +45 20710295</li>
+                    <li>Mail: ar@quick-it.dk</li>
+                </div>
+                <div class="footer-company-policies">
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <li>FAQ</li>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-notes">
+                <div class="footer-rights">Quickit c 2021 | All rights reserved</div>
+                <div class="footer-socials">
+                    <img src="/assets/linkedin.svg" class="linkedin" alt="linkedin">
+                    <img src="/assets/insta.svg" class="insta" alt="instagram">
+                    <img src="/assets/facebook.svg" class="facebook" alt="facebook">
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
