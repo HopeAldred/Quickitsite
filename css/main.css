@@ -26,7 +26,7 @@ body {
 .show-desktop {
     display: block;
 }
- 
+
 .nav {
     padding: 0;
     margin: 2em 0;
@@ -37,6 +37,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
  
 .navContainer {
