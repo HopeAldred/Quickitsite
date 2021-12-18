@@ -26,7 +26,7 @@ function handleData(blog){
         console.log(blog);
         document.querySelector(".blog-header").textContent = blog.header;
         document.querySelector(".blog-date").textContent = blog.date;
-        document.querySelector(".blog-long-text").textContent = blog.textLong;
+        document.querySelector(".blog-long-text").innerHTML = blog.textLong;
         document.querySelector(".blog-img").src = blog.img_url;
 }
 
