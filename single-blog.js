@@ -51,5 +51,27 @@ function openNav() {
 }
 
 function closeNav() {
-  document.getElementById("slideNav").style.width = "0";
+    document.getElementById("slideNav").style.width = "0";
 }
+
+const scrollBtn = document.querySelector(".scrollbutton");
+
+const refreshButton = () => {
+  if(document.documentElement.scrollTop <= 150) {
+    scrollBtn.style.display = "none";
+  } else {
+    scrollBtn.style.display = "block"
+  };
+}
+
+
+
+scrollBtn.addEventListener('click', () => {
+  document.body.scrollTop = 0;
+  //above is for Safari
+  document.documentElement.scrollTop = 0;
+});
+
+document.addEventListener("scroll", (e) =>{
+  refreshButton();
+})
