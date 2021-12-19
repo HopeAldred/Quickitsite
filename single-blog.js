@@ -25,6 +25,15 @@ function handleData(blog) {
   console.log(blog);
   document.querySelector(".blog-header").textContent = blog.header;
   const dateBlog = new Date(blog.date);
+}
+
+function handleData(blog){
+        console.log(blog);
+        document.querySelector(".blog-header").textContent = blog.header;
+        document.querySelector(".blog-date").textContent = blog.date;
+        document.querySelector(".blog-long-text").innerHTML = blog.textLong;
+        document.querySelector(".blog-img").src = blog.img_url;
+}
 
   document.querySelector(".blog-date").textContent =
     dateBlog.getDate() +
@@ -34,7 +43,7 @@ function handleData(blog) {
     dateBlog.getFullYear();
   document.querySelector(".blog-long-text").innerHTML = blog.textLong;
   document.querySelector(".blog-img").src = blog.img_url;
-}
+
 var menu = document.getElementById("menu");
 var nav = document.getElementById("navigation");
 var exit = document.getElementById("exit");
