@@ -203,6 +203,11 @@ footer {
   text-align: center;
 }
 
+iframe {
+  width: 100%;
+  min-height: 200px;
+}
+
 .homepage-title {
   margin: 10px;
   font-size: 20px;
@@ -338,6 +343,11 @@ footer {
 }
 
 @media only screen and (min-width: 650px) {
+  iframe {
+    width: 450px;
+    height: 350px;
+  }
+
   .homepage-hero {
     width: 70%;
   }
