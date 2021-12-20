@@ -652,6 +652,11 @@ footer {
   margin-right: 2em;
 }
 
+.about-mission-text,
+.about-vision-text {
+  font-size: 12px;
+}
+
 @media only screen and (min-width: 800px) {
   .about-about-title {
     margin-left: 2em;
