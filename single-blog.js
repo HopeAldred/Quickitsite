@@ -24,7 +24,14 @@ fetch(url, options)
 function handleData(blog) {
   console.log(blog);
   document.querySelector(".blog-header").textContent = blog.header;
-  document.querySelector(".blog-date").textContent = blog.date;
+  const dateBlog = new Date(blog.date);
+
+  document.querySelector(".blog-date").textContent =
+    dateBlog.getDate() +
+    "-" +
+    dateBlog.getMonth() +
+    "-" +
+    dateBlog.getFullYear();
   document.querySelector(".blog-long-text").innerHTML = blog.textLong;
   document.querySelector(".blog-img").src = blog.img_url;
 }
@@ -51,27 +58,25 @@ function openNav() {
 }
 
 function closeNav() {
-    document.getElementById("slideNav").style.width = "0";
+  document.getElementById("slideNav").style.width = "0";
 }
 
 const scrollBtn = document.querySelector(".scrollbutton");
 
 const refreshButton = () => {
-  if(document.documentElement.scrollTop <= 150) {
+  if (document.documentElement.scrollTop <= 150) {
     scrollBtn.style.display = "none";
   } else {
-    scrollBtn.style.display = "block"
-  };
-}
+    scrollBtn.style.display = "block";
+  }
+};
 
-
-
-scrollBtn.addEventListener('click', () => {
+scrollBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   //above is for Safari
   document.documentElement.scrollTop = 0;
 });
 
-document.addEventListener("scroll", (e) =>{
+document.addEventListener("scroll", (e) => {
   refreshButton();
-})
+});

@@ -25,7 +25,14 @@ function handleData(quickit) {
     const template = document.querySelector("#blog-template").content;
     const clone = template.cloneNode(true);
     clone.querySelector(".blog-header").textContent = blog.header;
-    clone.querySelector(".blog-date").textContent = blog.date;
+    const dateBlog = new Date(blog.date);
+
+    clone.querySelector(".blog-date").textContent =
+      dateBlog.getDate() +
+      "-" +
+      dateBlog.getMonth() +
+      "-" +
+      dateBlog.getFullYear();
     clone.querySelector(".blog-short-text").textContent = blog.textShort;
     clone.querySelector(".blog-img").src = blog.img_url;
     clone.querySelector(".blog-link").href = "single-blog.html?id=" + blog._id;
@@ -42,21 +49,19 @@ function handleData(quickit) {
 const scrollBtn = document.querySelector(".scrollbutton");
 
 const refreshButton = () => {
-  if(document.documentElement.scrollTop <= 150) {
+  if (document.documentElement.scrollTop <= 150) {
     scrollBtn.style.display = "none";
   } else {
-    scrollBtn.style.display = "block"
-  };
-}
+    scrollBtn.style.display = "block";
+  }
+};
 
-
-
-scrollBtn.addEventListener('click', () => {
+scrollBtn.addEventListener("click", () => {
   document.body.scrollTop = 0;
   //above is for Safari
   document.documentElement.scrollTop = 0;
 });
 
-document.addEventListener("scroll", (e) =>{
+document.addEventListener("scroll", (e) => {
   refreshButton();
-})
+});
