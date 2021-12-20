@@ -1006,16 +1006,21 @@ footer {
     width: 20%;
     height: 5px;
   }
-  
 }
 
 /*----------------------------------single blog page------------------------------*/
 
 .single-text {
-  margin-top: 4em;
+  margin-top: 2em;
   grid-column: 2;
   margin-bottom: 2em;
 }
+.blog-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: auto;
+}
+
 @media only screen and (min-width: 900px) {
   .blog-grid {
     display: grid;
